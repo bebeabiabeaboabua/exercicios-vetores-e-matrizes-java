@@ -6,7 +6,6 @@ public class Ex3_Matriz {
 
         double[][] matriz = new double[4][4];
 
-        // Leitura da matriz
         System.out.println("Digite os valores da matriz 4x4:");
         for (int i = 0; i < 4; i++) {
             for (int j = 0; j < 4; j++) {
