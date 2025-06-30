@@ -8,7 +8,6 @@ public class Ex5_Matriz {
 
         System.out.println("Digite os valores da matriz 3x3:");
 
-        // Leitura da matriz
         for (int i = 0; i < 3; i++) {
             for (int j = 0; j < 3; j++) {
                 System.out.print("Valor [" + i + "][" + j + "]: ");
@@ -16,11 +15,9 @@ public class Ex5_Matriz {
             }
         }
 
-        // Soma da primeira linha como valor de referência
         int somaMagica = matriz[0][0] + matriz[0][1] + matriz[0][2];
         boolean ehMagico = true;
 
-        // Verifica soma das linhas
         for (int i = 1; i < 3; i++) {
             int somaLinha = 0;
             for (int j = 0; j < 3; j++) {
@@ -32,7 +29,6 @@ public class Ex5_Matriz {
             }
         }
 
-        // Verifica soma das colunas
         if (ehMagico) {
             for (int j = 0; j < 3; j++) {
                 int somaColuna = 0;
@@ -46,7 +42,6 @@ public class Ex5_Matriz {
             }
         }
 
-        // Verifica soma da diagonal principal
         if (ehMagico) {
             int somaDiagonalPrincipal = matriz[0][0] + matriz[1][1] + matriz[2][2];
             if (somaDiagonalPrincipal != somaMagica) {
@@ -54,7 +49,6 @@ public class Ex5_Matriz {
             }
         }
 
-        // Verifica soma da diagonal secundária
         if (ehMagico) {
             int somaDiagonalSecundaria = matriz[0][2] + matriz[1][1] + matriz[2][0];
             if (somaDiagonalSecundaria != somaMagica) {
@@ -62,7 +56,6 @@ public class Ex5_Matriz {
             }
         }
 
-        // Resultado
         if (ehMagico) {
             System.out.println("\n A matriz é um QUADRADO MGICO! ");
         } else {
