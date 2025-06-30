@@ -11,9 +11,6 @@ public class Ex2_Matriz {
         int[] todosOsValores = new int[15];
         int index = 0;
 
-        int[] somaColunas = new int[5]; 
-        int[] somaLinhas = new int[5]; 
-
         System.out.println("Digite os valores da matriz 3x5:");
 
         for (int i = 0; i < 3; i++) { 
