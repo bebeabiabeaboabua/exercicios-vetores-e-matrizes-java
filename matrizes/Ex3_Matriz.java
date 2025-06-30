@@ -15,20 +15,20 @@ public class Ex3_Matriz {
         }
 
         // a) Diagonal principal (i == j)
-        System.out.println("\n🔷 Diagonal principal:");
+        System.out.println("\nDiagonal principal:");
         for (int i = 0; i < 4; i++) {
             System.out.print(matriz[i][i] + " ");
         }
 
         // b) Diagonal secundária (i + j == 3)
-        System.out.println("\n\n🔶 Diagonal secundária:");
+        System.out.println("\n\nDiagonal secundária:");
         for (int i = 0; i < 4; i++) {
             int j = 3 - i;
             System.out.print(matriz[i][j] + " ");
         }
 
         // c) Matriz transposta
-        System.out.println("\n\n🔁 Matriz transposta:");
+        System.out.println("\n\nMatriz transposta:");
         for (int i = 0; i < 4; i++) {
             for (int j = 0; j < 4; j++) {
                 System.out.print(matriz[j][i] + "\t");
