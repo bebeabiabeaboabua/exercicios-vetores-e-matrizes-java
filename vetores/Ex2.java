@@ -10,7 +10,7 @@ public class Ex2 {
 
         for (int i = 0; i < valores.length; i++) {
             System.out.print("Digite o valor " + (i + 1) + ": ");
-            valores[i] = scanner.nextInt(); // Aqui ele armazena o valor digitado
+            valores[i] = scanner.nextInt();
                 if (valores[i] % 2 == 0){
                     contadorPar++;
                 }else{
